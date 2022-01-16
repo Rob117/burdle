@@ -13,7 +13,7 @@ const processGuess = async (guess: string) => {
     if(word[i] === letter){
       output += (chalk.green(letter));
     } else if(word.includes(letter)){
-      output += (chalk.yellow(letter));
+      output += (chalk.yellowBright(letter));
     } else {
       output += (chalk.grey(letter))
     }
